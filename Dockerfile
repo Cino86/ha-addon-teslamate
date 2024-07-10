@@ -1,8 +1,8 @@
-FROM teslamate/grafana:1.29.1 as grafana
+FROM teslamate/grafana:1.30.1 as grafana
 
 #---
 
-FROM teslamate/teslamate:1.29.1
+FROM teslamate/teslamate:1.30.1
 
 ARG BUILD_ARCH
 ARG BASHIO_VERSION=0.16.2
@@ -66,5 +66,5 @@ ENTRYPOINT ["/init"]
 LABEL \
     org.opencontainers.image.title="Home Assistant Add-on: TeslaMate" \
     org.opencontainers.image.description="A self-hosted data logger for your Tesla." \
-    org.opencontainers.image.source="https://github.com/lildude/ha-addon-ghostfolio/" \
+    org.opencontainers.image.source="https://github.com/Cino86/ha-addon-teslamate" \
     org.opencontainers.image.licenses="MIT"
