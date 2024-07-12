@@ -35,7 +35,7 @@ jobs:
       - name: Get TeslaMate release notes
         run: |
           touch CHANGELOG.txt
-          gh pr list --repo lildude/ha-addon-teslamate --state=merged --search="Update TeslaMate" --limit=1 --json=body --jq '.[].body' | sed -n "/<\/summary>/,/<\/details>/p" | sed '1d;$d' > changelog.tmp
+          gh pr list --repo cino86/ha-addon-teslamate --state=merged --search="Update TeslaMate" --limit=1 --json=body --jq '.[].body' | sed -n "/<\/summary>/,/<\/details>/p" | sed '1d;$d' > changelog.tmp
           if [ -s changelog.tmp ]; then
             echo "## TeslaMate Release Notes" > CHANGELOG.txt
             cat changelog.tmp >> CHANGELOG.txt
@@ -63,7 +63,7 @@ jobs:
         uses: actions/checkout@v4.1.6
         with:
           path: repo
-          repository: lildude/ha-addons
+          repository: cino86/ha-addons
           token: ${{ secrets.HA_ADDONS_PAT }}
 
       - name: Update addon repo

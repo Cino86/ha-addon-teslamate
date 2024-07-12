@@ -3,7 +3,7 @@
     "version": "dev",
     "slug": "teslamate",
     "description": "A self-hosted data logger for your Tesla.",
-    "url": "https://github.com/lildude/ha-addon-teslamate",
+    "url": "https://github.com/cino86/ha-addon-teslamate",
     "arch": [
         "armv7",
         "aarch64",
@@ -67,5 +67,5 @@
         "share:rw"
     ],
     "codenotary": "colin@symr.io",
-    "image": "ghcr.io/lildude/ha-addon-teslamate-{arch}"
+    "image": "ghcr.io/cino86/ha-addon-teslamate-{arch}"
 }
