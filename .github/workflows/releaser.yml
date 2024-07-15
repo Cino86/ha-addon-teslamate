@@ -64,7 +64,7 @@ jobs:
         with:
           path: repo
           repository: cino86/ha-addons
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HA_ADDONS_PAT }}
 
       - name: Update addon repo
         run: |
